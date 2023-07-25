@@ -1,1 +1,45 @@
 @import url('reset.css');
+
+@font-face {
+    font-family: 'Luckiest Guy Regular';
+    src: url('../fonts/LuckiestGuy-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+body {
+    color: #23272A;
+    max-width: 1280px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Luckiest Guy Regular', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    max-width: 350px;
+}
+
+h2 {
+    font-family: 'Open Sans ExtraBold', sans-serif;
+    font-size: calc(0.9rem + 2vw);
+}
+
+p {
+    font-family: 'Open Sans Regular', sans-serif;
+}
+
+figure img {
+    width: 100%;
+}

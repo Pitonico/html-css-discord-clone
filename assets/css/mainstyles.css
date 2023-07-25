@@ -1,1 +1,138 @@
 @import url('global.css');
+
+header {
+    height: 459px;
+    background-image: url('../imgs/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center right -230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 24px;
+    max-width: 757px;
+}
+
+.header-content p {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    border-radius: 28px;
+    padding: 15px 0;
+}
+
+.btn01 {
+    background-color: #fff;
+    color: #23272A;
+}
+
+.btn02 {
+    background-color: #23272A;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 40px 24px;
+}
+
+section img {
+    max-width: 607px;
+}
+
+section .info {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+.sec04 h2 {
+    font-family: 'Luckiest Guy Regular', sans-serif;
+    font-size: 32px;
+}
+
+.sec04 figure {
+    order: 1;
+}
+
+footer {
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+footer figure {
+    flex-basis: 162px;
+}
+
+@media screen and (min-width: 757px) {
+
+    h1 {
+        font-size: 56px;
+    }
+
+    header {
+        background-position: center;
+    }
+
+    .header-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .buttons, section:not(.sec04) {
+        flex-direction: row;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 40px 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section:not(.sec04) .info {
+        flex-basis: 351px;
+    }
+
+    section .info {
+        gap: 16px;
+    }
+
+    .sec02 figure {
+        order: 1;
+    }
+
+    .sec04 .info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec04 h2 {
+        width: 500px;
+    }
+}
